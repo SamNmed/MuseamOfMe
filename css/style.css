@@ -1,0 +1,118 @@
+:root {
+    --whiteGreen: #d1ff8c;
+}
+
+body {
+    background: blanchedalmond;
+    font-family: "IBM Plex Sans";
+    min-height: 100vh;
+    margin: 0px;
+}
+body.full-page {
+    display: flex;
+    flex-direction: column;
+}
+.light-green-bkg {
+    background: #d1ff8c;
+}
+.pink-bkg {
+    background: plum;
+}
+h2 {
+    font-size: 32px;
+    font-family: "IBM Plex Mono";
+    font-weight: 600;
+}
+a {
+    color: #3B3B3B;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+model-viewer {
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+}
+header {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+section {
+    padding: 100px 50px;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.fridge-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.fridge-grid > div {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-large {
+    grid-column: span 2;
+}
+.primary-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.primary-nav li {
+    margin: 20px;
+}
+.light-yellow {
+    background-color: rgb(161, 126, 0);
+}
+.active {
+    font-weight: bold;
+}
+.footer {
+    align-content: center;
+}
+.full-page main {
+    flex-grow: 1;
+}
+flex.parent {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.glitch-bkg {
+    background-image: url("../images/static.webp");
+    background-color: blanchedalmond;
+    background-blend-mode: lighten;
+}
+
+@media screen and (max-width: 850px) {
+
+    .grid-parent {
+        grid-template-columns: 1fr;
+    }
+
+    .fridge-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
